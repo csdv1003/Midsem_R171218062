@@ -22,26 +22,35 @@ class calc
 			mul=x*y;
 			return mul;
 		}
+		int division()
+		{
+			int div;
+			div=x/y;
+			return div;
+		}
 };
 int main()
 {
 	calc obj;
 	cout<<"Enter two digits to perform binary operations:";
 	cin>>obj.a>>obj.b;	
-	int sum,difference,multiply;
+	int sum,difference,multiply,division;
 	int choice;
-	cout<<"Enter your choice: 1.Addition 2.Substraction 3.Multiplication";
+	cout<<"Enter your choice: 1.Addition 2.Substraction 3.Multiplication 4.Division";
 	cin>>choice;
 	switch(choice)
 	{
-		case 1: sum=obj.add();
-                        cout<<"sum:"<<sum<<endl;
-                        break;  	
+		case 1:sum=obj.add();
+                       cout<<"sum:"<<sum<<endl;
+                       break;  	
 	        case 2:difference=obj.substract();
-		       cout<<"Difference is"<<difference<<endl;
+		       cout<<"Difference is:"<<difference<<endl;
 		       break;
 		case 3:multiply=obj.multiply();
-		       cout<<"Product is"<<multiply<<endl;
+		       cout<<"Product is:"<<multiply<<endl;
+		       break;
+		case 4:division=obj.division();
+		       cout<<"Divide is:"<<division<<endl;
 		       break;
 	}
 	return 0;

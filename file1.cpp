@@ -8,4 +8,5 @@ int main()
 	cout<<"Hello";
 	cout<<"Its a good day";
 	cout<<" sum is: "<<x+y<<endl;
+	cout<<"End of program";
 }	

@@ -52,6 +52,7 @@ int main()
 		case 4:division=obj.division();
 		       cout<<"Divide is:"<<division<<endl;
 		       break;
+	       default:cout<<"Enter right choice";
 	}
 	return 0;
 }

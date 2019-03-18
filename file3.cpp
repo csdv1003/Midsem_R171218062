@@ -4,6 +4,6 @@ int main()
 {
 	cout<<"Lab activity";
 	cout<<"Hello!";
-	cout<<"End";
+	cout<<"End";//end of program//
 }
 

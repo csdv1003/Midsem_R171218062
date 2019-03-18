@@ -16,15 +16,21 @@ class calc
 			z=x-y;
 			return z;
 		}
+		int multiply()
+		{
+			int mul;
+			mul=x*y;
+			return mul;
+		}
 };
 int main()
 {
 	calc obj;
 	cout<<"Enter two digits to perform binary operations:";
 	cin>>obj.a>>obj.b;	
-	int sum,difference;
+	int sum,difference,multiply;
 	int choice;
-	cout<<"Enter your choice: 1.Addition 2.Substraction";
+	cout<<"Enter your choice: 1.Addition 2.Substraction 3.Multiplication";
 	cin>>choice;
 	switch(choice)
 	{
@@ -33,6 +39,9 @@ int main()
                         break;  	
 	        case 2:difference=obj.substract();
 		       cout<<"Difference is"<<difference<<endl;
+		       break;
+		case 3:multiply=obj.multiply();
+		       cout<<"Product is"<<multiply<<endl;
 		       break;
 	}
 	return 0;
